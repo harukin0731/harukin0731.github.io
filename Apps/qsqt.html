@@ -10,9 +10,26 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#header").load("/header.html");
-            $("#sidebar").load("/sidebar.html");
+            var $dir = location.href.split("/");
+            var $updir = "../";
+            var $dir2 = $dir[$dir.length - 2];
+            var $dir3 = $dir[$dir.length - 3];
+            var $rootdir = /*対象url作成*/ $updir + $updir + $dir3 + "/";
+            $("#header").load($rootdir + "header.html");
+            $("#sidebar").load($rootdir + "sidebar.html");
+            alert($rootdir);
         });
+
+        var local = window.location;
+        var dirCount = strCount(local.pathname, '\/');
+
+        function strCount(all, part) {
+            return (all.match(new RegExp(part, 'g')) || []).length;
+        }
+
+        function getDir(place, n) {
+            return place.pathname.replace(new RegExp('(?:\\\/+[^\\\/]*){0,' + ((n || 0) + 1) + '}$'), '/');
+        }
     </script>
 </head>
 

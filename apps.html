@@ -8,17 +8,17 @@
 <head>
     <title>Xprocess-apps</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-        $(function() {
-            var $dir = location.href.split("/");
-            var $dir2 = $dir[$dir.length - 2];
-            alert($dir2);
-        });
-    </script>
     <script type="text/javascript">
         $(function() {
-            $("#header").load("$dir2/header.html");
-            $("#sidebar").load("$dir2/sidebar.html");
+            var $dir = location.href.split("/");
+            var $updir = "../";
+            var $dir2 = $dir[$dir.length - 2];
+            var $rootdir = /*対象url作成*/ $updir + $dir2 + "/";
+            $("#header").load($rootdir + "header.html");
+            $("#sidebar").load($rootdir + "sidebar.html");
+            var elem = document.getElementById("image");
+            elem.innerHTML = "<a id = 'image' href='" + $rootdir + "index.html'><img src='" + $rootdir + "img/XprocessLogoBK.png' width='111' height='50' alt=''></a>";
+            alert($rootdir);
         });
     </script>
 </head>
