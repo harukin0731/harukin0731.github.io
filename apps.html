@@ -7,20 +7,14 @@
 
 <head>
     <title>Xprocess-apps</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-        $(function() {
-            var $dir = location.href.split("/");
-            var $dir2 = $dir[$dir.length - 2];
-            alert($dir2);
-        });
-    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#header").load("$dir2/header.html");
-            $("#sidebar").load("$dir2/sidebar.html");
+            $("#header").load("header.html");
+            $("#sidebar").load("sidebar.html");
         });
     </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <!-- Uses a transparent header that draws on top of the layout's background -->
@@ -51,40 +45,68 @@
     </div>
     <main class="mdl-layout__content">
         <font color="#ffffff">
-            <h3> 日常に、ちょっとの笑いと快適を。</h3>
-
-            <div>
+            <div style="text-align: center;">
+                <h3> 日常に、ちょっとの笑いと快適を。</h3>
                 ここでは、harukinが作成したアプリを公開しております。Taskerで作成した簡易アプリが主となります。
             </div>
         </font>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col">
+                <!-- Square card -->
+                <style>
+                    .demo-card-square.mdl-card {
+                        width: 320px;
+                        height: 320px;
+                    }
+                    
+                    .demo-card-square>.mdl-card__title {
+                        color: #fff;
+                        background: url('aimg/apps.png') bottom right 15% no-repeat #46B6AC;
+                    }
+                </style>
 
-        <div class="mdl-cell mdl-cell--4-col">
-            <!-- Square card -->
-            <style>
-                .demo-card-square.mdl-card {
-                    width: 320px;
-                    height: 320px;
-                }
-                
-                .demo-card-square>.mdl-card__title {
-                    color: #fff;
-                    background: url('../img/apps.png') bottom right 15% no-repeat #46B6AC;
-                }
-            </style>
-
-            <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title mdl-card--expand">
-                    <h2 class="mdl-card__title-text">QSQT</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    画面右下に常駐するボタンから検索や揮発性メモを取れるお助けツールです。
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="Apps/qsqt.html">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">Yづクライアント</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Mastodonインスタンス、Yづドン用に作成されたTasker製Mastodonクライアントです。
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="Y-du_crient.html">
                           詳細
                     </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <!-- Square card -->
+                <style>
+                    .demo-card-square.mdl-card {
+                        width: 320px;
+                        height: 320px;
+                    }
+                    
+                    .demo-card-square>.mdl-card__title {
+                        color: #fff;
+                        background: url('aimg/apps.png') bottom right 15% no-repeat #46B6AC;
+                    }
+                </style>
+
+                <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title mdl-card--expand">
+                        <h2 class="mdl-card__title-text">QSQT</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        画面右下に常駐するボタンから検索や揮発性メモを取れるお助けツールです。
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="qsqt.html">
+                              詳細
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    </div
+</div>
