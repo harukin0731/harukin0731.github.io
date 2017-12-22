@@ -50,60 +50,62 @@
             </div>
         </font>
 
-        <!-- Image card -->
+
+
+        <!-- Event card -->
         <style>
-            .demo-card-image.mdl-card {
+            .demo-card-event.mdl-card {
                 width: 80%;
-                height: 80%;
+                height: auto;
                 margin-right: auto;
                 margin-left: auto;
-                background: url('img/Apps/qsqt-1.png') center / cover;
+                background: #3E4EB8;
             }
             
-            .demo-card-image>.mdl-card__actions {
-                height: auto;
-                padding: 16px;
-                background: rgba(0, 0, 0, 0.363);
+            .demo-card-event>.mdl-card__actions {
+                border-color: rgba(255, 255, 255, 0.048);
             }
             
-            .demo-card-image__filename {
+            .demo-card-event>.mdl-card__title {
+                align-items: flex-start;
+            }
+            
+            .demo-card-event>.mdl-card__title>h4 {
+                margin-top: 0;
+            }
+            
+            .demo-card-event>.mdl-card__actions {
+                display: flex;
+                box-sizing: border-box;
+                align-items: center;
+            }
+            
+            .demo-card-event>.mdl-card__actions>.material-icons {
+                padding-right: 10px;
+            }
+            
+            .demo-card-event>.mdl-card__title,
+            .demo-card-event>.mdl-card__actions,
+            .demo-card-event>.mdl-card__actions>.mdl-button {
                 color: #fff;
-                font-size: 14px;
-                font-weight: 500;
             }
         </style>
 
-        <div class="demo-card-image mdl-card mdl-shadow--2dp">
+        <div class="demo-card-event mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title mdl-card--expand">
-                <blockquote class="twitter-tweet" data-lang="ja">
-                    <p lang="ja" dir="ltr">
-                        BitZeny管理効率化俺得アプリ、BZVです。<br> あちこちブラウザタブを行き来するのが面倒だったので簡単に見られるように、と作成しました。
-                        <br> 左上:BitZenyWallet
-                        <br> 右上:チャート
-                        <br> 左下:CCEX
-                        <br> 右下:lapool
-                        <br> の配置となっており、それぞれを拡大もできます。
-                        <a href="https://t.co/sksFYuPYdA">
-                            https://t.co/sksFYuPYdA
-                        </a>
-                        <a href="https://t.co/6byauzHOoY">
-                            pic.twitter.com/6byauzHOoY
-                        </a>
-                    </p>
-                    &mdash; Hairs UK Intelligent (@mhkai00731) <a href="https://twitter.com/mhkai00731/status/941603129258151936?ref_src=twsrc%5Etfw">
-                        2017年12月15日
-                    </a>
-                </blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-            <div class="mdl-card__actions">
-                <span class="demo-card-image__filename">
-                        
-                </span>
+                <h4>
+                    動作要件：Android5.0以上<br>
 
+                </h4>
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/mhkai00731/status/941603129258151936">
+                    ダウンロードサイトへ行く
+                </a>
 
             </div>
         </div>
+        <br>
 
         <br>
     </main>
