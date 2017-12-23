@@ -1,56 +1,66 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-<head>
-    <title>Xprocess</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#header").load("header.html");
-            $("#sidebar").load("sidebar.html");
-        });
-    </script>
-</head>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Xprocess</title>
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-amber.min.css" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" defer>
+			$(function() {
+				$("#header").load("header.html");
+				$("#sidebar").load("sidebar.html");
+			});
+		</script>
+		
+		<script async defer src="https://platform.twitter.com/widgets.js"></script>
+		
+		<!-- Uses a transparent header that draws on top of the layout's background -->
+		<style>
+			.demo-layout-transparent {
+				background: url('./img/background.jpg') center / cover;
+			}
+			.demo-layout-transparent .mdl-layout__header,
+			.demo-layout-transparent .mdl-layout__drawer-button {
+				/* This background is dark, so we set text to white. Use 87% black instead if your background is light. */
+				color: white;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+			<header class="mdl-layout__header mdl-layout__header--transparent">
+				<div id="header">
+					
+				</div>
+			</header>
+			
+			<div class="mdl-layout__drawer">
+				<div id="sidebar">
 
-<!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
-    .demo-layout-transparent {
-        background: url('./img/background.jpg') center / cover;
-    }
-    
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {
-        /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-        color: white;
-    }
-</style>
-
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-        <div id="header">
-
-        </div>
-    </header>
-    <div class="mdl-layout__drawer">
-        <div id="sidebar">
-
-        </div>
-
-    </div>
-    <main class="mdl-layout__content">
-
-
-
-        <div style="text-align: center;"><b><span style="font-size: larger;"><div class="typo-styles__demo mdl-typography--display-2">世界を見よう。未来を見よう。</div></span></b></div>
-        <h1>
-            準備中(´・ω・｀)
-        </h1>
-        <a class="twitter-timeline" href="https://twitter.com/mhkai00731?ref_src=twsrc%5Etfw">Tweets by mhkai00731</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </main>
-</div>
+				</div>
+			</div>
+			
+			<main class="mdl-layout__content">
+				<div style="text-align: center;">
+					<b>
+						<span style="font-size: larger;">
+							<div class="typo-styles__demo mdl-typography--display-2">世界を見よう。未来を見よう。</div>
+						</span>
+					</b>
+				</div>
+				
+				<h1>準備中(´・ω・｀)</h1>
+				<a class="twitter-timeline" href="https://twitter.com/mhkai00731?ref_src=twsrc%5Etfw">Tweets by mhkai00731</a>
+			</main>
+		</div>
+	</body>
+</html>
