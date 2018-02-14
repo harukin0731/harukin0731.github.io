@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #wrap {
+            width: 100%;
+        }
+        
+        #flow-text {
+            position: absolute;
+            top: 0;
+            right: -24em;
+            /* 文字数に合わせて変更 */
+            color: rgb(0, 0, 0);
+            white-space: nowrap;
+            animation: flow 10s linear infinite;
+        }
+        
+        @keyframes flow {
+            from {
+                right: -20em;
+                /* 文字数に合わせて変更 */
+            }
+            to {
+                right: 110%;
+            }
+        }
+        
+        html {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p id="flow-text">■2018/2/14 新規ページを作成</p>
+    </main>
+</body>
+
+</html>
