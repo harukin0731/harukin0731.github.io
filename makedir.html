@@ -1,0 +1,11 @@
+<script type="text/javascript">
+    $(function() {
+        var $dir = location.href.split("/");
+        var $updir = "../";
+        var $dir2 = $dir[$dir.length - 2];
+        var $rootdir = /*対象url作成*/ $updir + $dir2 + "/";
+        $("#header").load($rootdir + "header.html");
+        $("#sidebar").load($rootdir + "sidebar.html");
+        alert($dir2);
+    });
+</script>
