@@ -37,8 +37,11 @@ footer {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.836));
 }
 
-footer a {
+footer a,
+footer a:link,
+footer a:visited {
     width: 25%;
+    color: #fff;
 }
 
 *g {
