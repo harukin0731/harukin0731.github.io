@@ -34,7 +34,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.397));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.836));
 }
 
 footer a {
@@ -49,4 +49,8 @@ footer a {
     display: table-cell;
     text-align: center;
     color: #ffffffff;
+}
+
+.br10 {
+    height: 10px;
 }
