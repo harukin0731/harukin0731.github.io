@@ -10,11 +10,10 @@
     <style type="text/css">
         div {
             min-height: 200px;
+            max-height: 2000px;
             /*高さ*/
             margin: 10px;
             /*ボックス同士の隙間*/
-            color: black;
-            /*文字色*/
             background: rgb(255, 255, 255);
             /*ボックス領域の背景、白*/
             box-shadow: -3px -3px 20px 3px rgb(224, 224, 224) inset;
@@ -37,30 +36,35 @@
             color: white;
         }
     </style>
+    <!-- head 内か、body 終了タグの直前に次のタグを貼り付けてください。 -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+        {
+            lang: 'ja'
+        }
+    </script>
 </head>
 
 <body>
     <main>
+        <h1>連絡先</h1>
         <br>
-        <img src="img/XprocessLogo.png" width="333" height="150" alt="">
+        <h3>Xprocessの公式アカウントへの各種リンクです。</h3>
         <br>
         <br>
-        <h1>アプリケーション一覧</h1>
-        <a href="./qsqt.html">
-            <div class="block">
-                <h2>QSQT</h2>
-                <img src="img/Apps/qsqt/qsqt.webp" width="60" height="60" alt="">
-                <br> 気になったらすぐに検索。
-                <br> 気になった時に検索アプリを開くそのひと手間、その今使っているアプリを中断して検索を始めるそのひと手間に注目しました。QSQTなら今使用中のアプリを終了させることなく検索を始めることができます。
-            </div>
-        </a>
-        <a href="./Atsumori.html">
-            <div class="block">
-                <h2>熱盛タイム</h2>
-                <img src="./img/Apps/Atsumori/Atsumori-1.png" height="60" alt="">
-                <br> いつでもどこでm.....ｱﾂﾓﾘｨｨｨ!!
-            </div>
-        </a>
+        <div class="block">
+            <h2>Twitter</h2>
+            <a class="twitter-timeline" data-height="1000" href="https://twitter.com/Xprocess_main?ref_src=twsrc%5Etfw">Tweets by Xprocess_main</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="block">
+            <h2>Google+</h2>
+
+
+            <!-- ウィジェット を表示したい位置に次のタグを貼り付けてください。 -->
+            <div class="g-page" data-href="https://plus.google.com/112671876353182656385" data-theme="dark" data-showtagline="false" data-rel="publisher"></div>
+            <br>
+            <br>
+        </div>
         <br>
         <br>
         <br>
