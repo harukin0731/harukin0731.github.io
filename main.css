@@ -8,12 +8,17 @@ header {
     color: rgb(255, 255, 255);
 }
 
-body {
+html {
     margin: 0%;
     background: url("./img/background.jpg")center center / cover no-repeat fixed;
 }
 
+body {
+    margin: 0%;
+}
+
 main {
+    margin: 0%;
     text-align: center;
 }
 
@@ -29,7 +34,7 @@ main {
 footer {
     margin: 0;
     display: table;
-    background-color: #ffffff93;
+    background-color: rgba(255, 255, 255, 0.561);
     box-shadow: #2e2e2e;
     position: fixed;
     width: 100%;
@@ -56,4 +61,66 @@ footer a:visited {
 
 .br10 {
     height: 10px;
+    clear: left;
+}
+
+.br10ex {
+    height: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .br10ex {
+        height: 0px;
+    }
+}
+
+.br20 {
+    height: 20px;
+    clear: left;
+}
+
+
+/*以下box用css*/
+
+div {
+    min-height: 200px;
+    /*高さ*/
+    color: black;
+    /*文字色*/
+    background: #fdd3d3;
+    /*ボックス領域の背景、白*/
+    box-shadow: -3px -3px 20px 3px rgb(224, 224, 224) inset;
+    /*ボックスの影 左右の向き、上下の向き、ぼかし、広がり、色、内側指定*/
+    border-radius: 3px;
+    /*ボックス領域の角を丸くする*/
+    text-align: center;
+    margin: auto;
+}
+
+div.block {
+    margin: auto;
+    /*中央表示*/
+    margin-top: 20px;
+    /*左端に設置、残った奴は押し出されて右へ*/
+    width: 90%;
+    /*横幅50%から20pxを引いた値*/
+    min-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+    /* ここにタブレット・PCの記述 */
+    div.block {
+        margin: 10px;
+        /*ボックス同士の隙間*/
+        float: left;
+        /*左端に設置、残った奴は押し出されて右へ*/
+        width: calc(50% - 20px);
+        /*横幅50%から20pxを引いた値*/
+        min-width: 300px;
+    }
+}
+
+h1,
+h3 {
+    color: white;
 }
