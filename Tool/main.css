@@ -11,6 +11,7 @@ header {
 html {
     margin: 0%;
     background: url("../img/background.jpg")center center / cover no-repeat fixed;
+    height: 100vh;
 }
 
 body {
