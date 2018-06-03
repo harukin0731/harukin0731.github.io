@@ -10,7 +10,7 @@ header {
 
 html {
     margin: 0%;
-    background: url("./img/background.jpg")center center / cover no-repeat fixed;
+    background: url("../img/background.jpg")center center / cover no-repeat fixed;
 }
 
 body {
@@ -20,10 +20,15 @@ body {
 main {
     margin: 0%;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
 }
 
+.load{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    margin: 0px;
+}
 .box {
     border: solid 8px red;
     box-sizing: border-box;
@@ -60,7 +65,7 @@ footer a:visited {
     text-align: center;
     color: rgb(255, 255, 255);
 }
-
+/*以下スペース*/
 .br10 {
     height: 10px;
     clear: left;
@@ -117,11 +122,11 @@ div.block {
 @media screen and (min-width: 768px) {
     /* ここにタブレット・PCの記述 */
     div.block {
-        margin: 10px;
+        margin: 15px;
         /*ボックス同士の隙間*/
         float: left;
         /*左端に設置、残った奴は押し出されて右へ*/
-        width: calc(50% - 20px);
+        width: calc(50% - 30px);
         /*横幅50%から20pxを引いた値*/
         min-width: 300px;
     }
