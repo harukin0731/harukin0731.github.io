@@ -135,13 +135,13 @@ footer a:visited {
         display: table-cell;
     }
     .mainbox .picturearea{
-        width: 50vw;
+        width: 50%;
         transform:skewY(5deg) scale(1.3);
         height: unset;
     }
     .mainbox .textarea{
         transform:skewY(5deg);
-        width: 50vw;
+        width: 50%;
     }
 }
 h1,
