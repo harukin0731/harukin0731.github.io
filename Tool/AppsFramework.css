@@ -16,12 +16,12 @@ html {
 
 body {
     margin: 0%;
-    overflow-x:hidden;
 }
 
 main {
     margin: 0%;
     text-align: center;
+    overflow-x:hidden;
 }
 
 .load{
@@ -113,7 +113,7 @@ footer a:visited {
 
 .mainbox{
     transform:skewY(-5deg);
-    width:100vw;
+    width:100%;
 }
 .mainbox div{
     position: relative;
@@ -128,7 +128,8 @@ footer a:visited {
 @media screen and (min-width: 700px) {
     .mainbox{
         transform:skewY(-5deg);
-        width:100vw;
+        width:100%;
+        overflow: hidden;
     }
     .mainbox div{
         display: table-cell;
