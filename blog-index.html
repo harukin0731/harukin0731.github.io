@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Xprocess Top Page</title>
+    <script src="Tool/jquery-3.3.1.min.js"></script>
+    <script>
+        //var list = XMLHttpRequestUpload("./blog/bloglist.csv");
+        //alert(list);
+        /*function getCSV() {
+            var req = new XMLHttpRequest();
+            req.open("get", "./blog/bloglist.txt", true);
+            req.send(null);
+            req.onload = function () {
+                var result = req.responseText.split("\n");
+            }
+        }
+        getCSV();
+*/
+        $(function () {
+            $("#frame").load("frame.html");
+            $("#2018070501").load("./blog/2018070501.html");
+        });
+        $.ajax({
+            url: './blog/bloglist.txt',
+            success: function (data) {
+                var arr = data.split(/\n/);
+                for (var i in arr) {
+                    console.log(i + ':' + arr[i]);
+                } alert(arr[0]);
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="frame"></div>
+
+    <main>
+        <p class="br10"></p>
+        <img src="img/XprocessLogo.png" width="333" height="150" alt="">
+        <h1>Xprocessのブログです。</h1>
+        <p class="br10ex"></p>
+        <h3>各項目へのリンクは最下層のボタンよりどうぞ・・・・</h3>
+        <p class="br20"></p>
+        <h3>主な活動</h3>
+        <p id="2018070501"></p>
+        <a href="https://pcgf.y-zu.org">
+            <div class="block">
+                <h2>I'm in PCGF teams</h2>
+                <img>
+                <p>XprocessはPCGFの一員です。</p>
+            </div>
+        </a>
+        <p class="br10ex"></p>
+    </main>
+</body>
+
+</html>
