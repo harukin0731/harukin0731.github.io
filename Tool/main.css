@@ -95,11 +95,17 @@ footer a:visited {
     .br10ex {
         height: 0px;
     }
+    .br20ex {
+        height: 0px;
+    }
 }
 
 .br20 {
     height: 20px;
     clear: left;
+}
+.br20ex {
+    height: 20px;
 }
 
 
