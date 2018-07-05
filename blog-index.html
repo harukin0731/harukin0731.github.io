@@ -26,7 +26,7 @@
             success: function (data) {
                 var arr = data.split(/\n/);
                 for (var i in arr) {
-                    console.log(i + ':' + arr[i]);
+                    //console.log(i + ':' + arr[i]);
                     $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
                     $("#itembox").prepend("<p id=" + arr[i] + "></p>\n<p id='itembox'></p>");
                 }
