@@ -49,6 +49,7 @@ footer {
     bottom: 0;
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.836));
 }
+
 @media screen and (min-width: 400px) {
     footer {
         font-size: medium;
