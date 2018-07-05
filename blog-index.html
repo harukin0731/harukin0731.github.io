@@ -28,7 +28,7 @@
                 for (var i in arr) {
                     console.log(i + ':' + arr[i]);
                     $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
-                    $("#itembox").prepend("<p class=" + arr[i] + "></p>\n<p id='itembox'></p>");
+                    $("#itembox").prepend("<p id=" + arr[i] + "></p>\n<p id='itembox'></p>");
                 }
             }
         });
