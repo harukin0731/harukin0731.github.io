@@ -27,6 +27,8 @@
                 var arr = data.split(/\n/);
                 for (var i in arr) {
                     console.log(i + ':' + arr[i]);
+                    $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
+                    $("#itembox").prepend("<p class=" + arr[i] + "></p>\n<p id='itembox'></p>");
                 }
             }
         });
@@ -46,6 +48,7 @@
         <p class="br20"></p>
         <h3>主な活動</h3>
         <p id="2018070501"></p>
+        <p id="itembox"></p>
         <a href="https://pcgf.y-zu.org">
             <div class="block">
                 <h2>I'm in PCGF teams</h2>
