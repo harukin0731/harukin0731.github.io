@@ -28,7 +28,7 @@
                 for (var i in arr) {
                     //console.log(i + ':' + arr[i]);
                     $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
-                    $("#itembox").prepend("<p id=" + arr[i] + "></p>\n<p id='itembox'></p>");
+                    $("#itembox").text("<p id=" + arr[i] + "></p>\n<p id='itembox'></p>");
                     alert("記事を追加しました。");
                 }
             }
@@ -48,7 +48,7 @@
         <h3>各項目へのリンクは最下層のボタンよりどうぞ・・・・test中</h3>
         <p class="br20"></p>
         <h3>主な活動</h3>
-        <p id="2018070501"></p>
+        <p id='2018070501'></p>
         <p id="itembox"></p>
         <a href="https://pcgf.y-zu.org">
             <div class="block">
