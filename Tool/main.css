@@ -129,7 +129,7 @@ main div {
     /*リンク下線の消去*/
 }
 div.mod{
-    max-height: 400px;
+    max-height: 250px;
     /*最大高さ*/
     overflow: hidden;
     /*はみだした範囲を隠す*/
