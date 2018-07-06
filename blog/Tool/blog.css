@@ -20,7 +20,6 @@ body {
 
 main {
     margin: 0%;
-    text-align: center;
 }
 
 .load{
@@ -104,12 +103,12 @@ footer a:visited {
 
 /*以下box用css*/
 
-main div {
+main div.block {
     min-height: 200px;
     /*高さ*/
     color: black;
     /*文字色*/
-    background: #d3fdf081;
+    background: #ffffffe5;
     /*ボックス領域の背景、白*/
     border-radius: 3px;
     /*ボックス領域の角を丸くする*/
@@ -117,9 +116,7 @@ main div {
     /*ボックスの中央配置*/
     text-decoration: none;
     /*リンク下線の消去*/
-}
-
-div.block {
+    border: double 2px #ffffff;
     margin: auto;
     /*中央表示*/
     margin-top: 20px;
@@ -143,16 +140,29 @@ div.block {
     }
 }
 
-h3 {
-    color: white;
-}
+
 h2{
     text-align: center;
     text-decoration-line: underline;
+    color:white;
 }
 h3{
     text-align: right;
+    margin-right: 10px;
 }
-a.blog{
-    pointer-events: none;
+
+section{
+    margin-left: 10px;
+}
+div.semititle{
+    background: rgba(165, 42, 42, 0.678);
+    margin-right: 20px;
+}
+section div.semititle h4{
+    margin-left: 10px;
+    font-size: 150%;
+    background-color: rgba(255, 228, 196, 0.849);
+    display: flex;
+    align-items: center;
+    block-size: 50px;
 }

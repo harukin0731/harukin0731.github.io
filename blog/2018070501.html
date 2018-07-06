@@ -2,21 +2,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./Tool/blog.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="../Tool/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#frame").load("frame.html");
+        });
+
+    </script>
 </head>
 
 <body>
     <main>
+        <h2>ブログのテスト</h2>
         <div class="block">
             <p class="br10ex"></p>
-            <h2>ブログのテスト</h2>
             <h3>2017/07/05</h3>
-            <p>初めまして、Xprocessの管理人のharukinと申します。</p>
-            <p>Xprocess関連の更新情報などを随時更新していきたいと思いますのでよろしくお願いします。</p>
+            <section>
+                <div class="semititle">
+                    <h4>始めに</h4>
+                </div>
+                <p>初めまして、Xprocessの管理人のharukinと申します。</p>
+                <p>Xprocess関連の更新情報などを随時更新していきたいと思いますのでよろしくお願いします。</p>
+            </section>
+            <section>
+                <div class="semititle">
+                    <h4>ここの活用方法</h4>
+                </div>
+                <p>現状では、各種Xprocess関連のサービスやアプリケーションの開発進捗などをここに投稿していこうかと思っています。</p>
+                <p>要するにニュースリリースという訳ですね。</p>
+            </section>
         </div>
     </main>
+    <div id="frame"></div>
+</body>
 
 </body>
 
