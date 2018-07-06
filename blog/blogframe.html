@@ -11,9 +11,11 @@
         var backurl;
         var fowardurl;
         $.ajax({
-            url: './blog/bloglist.txt',
+            url: './bloglist.txt',
             success: function (data) {
+                alert("仕事開始");
                 var arr = data.split(/\n/);
+                alert(arr[0]);
                 for (var i in arr) {
                     var f = Number(i) - 1;
                     var b = Number(i) + 1;
