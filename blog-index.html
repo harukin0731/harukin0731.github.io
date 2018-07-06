@@ -27,9 +27,9 @@
                 var arr = data.split(/\n/);
                 for (var i in arr) {
                     //console.log(i + ':' + arr[i]);
-                    $("#" + i).html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='" + (i + 1) + "'></p>");
-                    $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
-                    alert("記事を追加しました。" + arr[0] + arr[1]);
+                    $("#" + i).html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='" + calc(i + 1) + "'></p>");
+                    $("#" + arr[i]).load("'./blog/" + arr[i] + ".html'");
+                    alert("記事を追加しました。" + arr[i]);
                 }
             }
         });
