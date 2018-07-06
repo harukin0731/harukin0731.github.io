@@ -30,7 +30,7 @@
                     //console.log(i + ':' + arr[i]);
                     $("#" + i).html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='" + x + "'></p>");
                     $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
-                    alert("記事を追加しました。" + arr[i]);
+                    alert("記事を追加しました。" + x + "   " + arr[i]);
                 }
             }
         });
