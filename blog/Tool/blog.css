@@ -103,7 +103,7 @@ footer a:visited {
 
 /*以下box用css*/
 
-main div.block {
+main div.block1 {
     min-height: 200px;
     /*高さ*/
     color: black;
