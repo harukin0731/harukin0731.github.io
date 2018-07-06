@@ -111,7 +111,7 @@ footer a:visited {
 
 /*以下box用css*/
 
-main div {
+main div.block {
     min-height: 200px;
     /*高さ*/
     color: black;
@@ -128,9 +128,6 @@ main div {
     /*ボックスの中央配置*/
     text-decoration: none;
     /*リンク下線の消去*/
-}
-
-div.block {
     margin: auto;
     /*中央表示*/
     margin-top: 20px;
