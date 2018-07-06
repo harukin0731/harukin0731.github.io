@@ -130,6 +130,7 @@ main div {
     /*ボックスの中央配置*/
     text-decoration: none;
     /*リンク下線の消去*/
+    overflow: hidden;
 }
 
 div.block {
