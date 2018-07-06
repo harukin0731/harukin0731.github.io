@@ -29,6 +29,7 @@
                     //console.log(i + ':' + arr[i]);
                     $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
                     $("#itembox").prepend("<p id=" + arr[i] + "></p>\n<p id='itembox'></p>");
+                    aleart("記事を追加しました。");
                 }
             }
         });
