@@ -106,6 +106,8 @@ footer a:visited {
 main div.block {
     min-height: 200px;
     /*高さ*/
+    max-height: 400px;
+    /*最大高さ*/
     color: black;
     /*文字色*/
     background: #ffffffe5;
