@@ -27,7 +27,7 @@
                 var arr = data.split(/\n/);
                 for (var i in arr) {
                     //console.log(i + ':' + arr[i]);
-                    $("#" + i).html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='" + i + "'></p>");
+                    $("#" + i).html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='" + (i + 1) + "'></p>");
                     $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
                     alert("記事を追加しました。");
                 }
