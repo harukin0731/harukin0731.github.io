@@ -27,8 +27,8 @@
                 var arr = data.split(/\n/);
                 for (var i in arr) {
                     //console.log(i + ':' + arr[i]);
-                    $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
                     $("#itembox").text("<p id=" + arr[i] + "></p>\n<p id='itembox'></p>");
+                    $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
                     alert("記事を追加しました。");
                 }
             }
