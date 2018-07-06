@@ -28,7 +28,7 @@
                 for (var i in arr) {
                     //console.log(i + ':' + arr[i]);
                     $("#" + i).html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='" + (i + 1) + "'></p>");
-                    $("'#" + arr[i] + "'").load("'./blog/" + arr[i] + ".html'");
+                    $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
                     alert("記事を追加しました。" + arr[i]);
                 }
             }
@@ -44,7 +44,7 @@
         <img src="img/XprocessLogo.png" width="333" height="150" alt="">
         <h1>Xprocessのブログです。</h1>
         <p class="br10ex"></p>
-        <h3>各項目へのリンクは最下層のボタンよりどうぞ・・・・t中</h3>
+        <h3>各項目へのリンクは最下層のボタンよりどうぞ・・・・et中</h3>
         <p class="br20"></p>
         <h3>主な活動</h3>
         <a id='2018070501' href='./blog/2018070501.html'></a>
