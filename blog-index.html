@@ -27,13 +27,12 @@
                 var arr = data.split(/\n/);
                 for (var i in arr) {
                     //console.log(i + ':' + arr[i]);
-                    $("#itembox").html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='itembox'></p>");
+                    $("#" + i).html("<a id='" + arr[i] + "' href='./blog/" + arr[i] + ".html'></a>\n<p id='" + i + "'></p>");
                     $("#" + arr[i]).load("./blog/" + arr[i] + ".html");
                     alert("記事を追加しました。");
                 }
             }
         });
-        alert(arr[0]);
     </script>
 </head>
 
@@ -49,7 +48,7 @@
         <p class="br20"></p>
         <h3>主な活動</h3>
         <a id='2018070501' href='./blog/2018070501.html'></a>
-        <a id="itembox"></a>
+        <a id="0"></a>
         <a href="https://pcgf.y-zu.org">
             <div class="block">
                 <h2>I'm in PCGF teams</h2>
