@@ -13,27 +13,30 @@
         $.ajax({
             url: './bloglist.txt',
             success: function (data) {
-                alert("仕事開始");
                 var arr = data.split(/\n/);
-                alert(arr[0]);
                 for (var i in arr) {
                     var f = Number(i) - 1;
                     var b = Number(i) + 1;
-                    alert(f);
                     if (arr[i] == url) {
                         backurl = arr[b];
                         fowardurl = arr[f];
                     }
-                    alert(backurl);
-                    alert(fowardurl);
                 }
             }
         });
         function back() {
-            location.href = backurl + ".html";
+            if (backurl == "undefined") {
+                alert("これ以上ページはありません！");
+            } else {
+                location.href = backurl + ".html";
+            }
         }
         function foward() {
-            location.href = fowardurl + ".html";
+            if (fowardurl == "undefined") {
+                alert("これ以上ページはありません！");
+            } else {
+                location.href = fowardurl + ".html";
+            }
         }
     </script>
 </head>
