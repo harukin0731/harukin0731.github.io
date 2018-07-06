@@ -164,5 +164,5 @@ section div.semititle h4{
     background-color: rgba(255, 228, 196, 0.849);
     display: flex;
     align-items: center;
-    block-size: 50px;
+    block-size: auto;
 }
