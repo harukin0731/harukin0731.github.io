@@ -33,7 +33,6 @@ main {
 .box {
     border: solid 8px red;
     box-sizing: border-box;
-    text-align: center;
     line-height: 100px;
     font-weight: bold;
     font-size: 60px;
@@ -105,26 +104,22 @@ footer a:visited {
 
 /*以下box用css*/
 
-main di2v {
+main div {
     min-height: 200px;
     /*高さ*/
     color: black;
     /*文字色*/
-    background: #fdd3d3;
+    background: #d3fdf081;
     /*ボックス領域の背景、白*/
-    box-shadow: -3px -3px 20px 3px rgb(224, 224, 224) inset;
-    /*ボックスの影 左右の向き、上下の向き、ぼかし、広がり、色、内側指定*/
     border-radius: 3px;
     /*ボックス領域の角を丸くする*/
-    text-align: center;
-    /*テキストの中央配置*/
     margin: auto;
     /*ボックスの中央配置*/
     text-decoration: none;
     /*リンク下線の消去*/
 }
 
-div.blockaaa {
+div.block {
     margin: auto;
     /*中央表示*/
     margin-top: 20px;
@@ -148,9 +143,15 @@ div.blockaaa {
     }
 }
 
-h1,
 h3 {
     color: white;
+}
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+h3{
+    text-align: right;
 }
 a.blog{
     pointer-events: none;
