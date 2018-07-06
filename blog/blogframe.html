@@ -5,22 +5,51 @@
     <link rel="stylesheet" type="text/css" href="./Tool/blog.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+        var url = location.href.split('/').pop();
+        url = url.replace('.html', '');
+        var backurl;
+        var fowardurl;
+        $.ajax({
+            url: './blog/bloglist.txt',
+            success: function (data) {
+                var arr = data.split(/\n/);
+                for (var i in arr) {
+                    var f = Number(i) - 1;
+                    var b = Number(i) + 1;
+                    alert(f);
+                    if (arr[i] == url) {
+                        backurl = arr[b];
+                        fowardurl = arr[f];
+                    }
+                    alert(backurl);
+                    alert(fowardurl);
+                }
+            }
+        });
+        function back() {
+            location.href = backurl + ".html";
+        }
+        function foward() {
+            location.href = fowardurl + ".html";
+        }
+    </script>
 </head>
 
 <body>
     <footer>
+        <a href="javascript:back()" class="p hov2" id="g">
+            <i class="fas fa-angle-left fa-2x"></i>
+            <br>新しい情報</a>
         <a href="../index.html" class="p">
             <i class="fas fa-home fa-2x"></i>
             <br>トップページ</a>
-        <a href="../apps.html" class="p hov2" id="g">
-            <i class="fab fa-google-play fa-2x"></i>
-            <br>アプリ開発</a>
-        <a href="../inex.html" class="p">
+        <a href="../blog-index.html" class="p">
             <i class="fas fa-pause fa-2x"></i>
-            <br>準備中</a>
-        <a href="../infomation.html" class="p">
-            <i class="far fa-id-card fa-2x"></i>
-            <br>連絡先</a>
+            <br>一覧に戻る</a>
+        <a href="javascript:foward()" class="p">
+            <i class="fas fa-angle-right fa-2x"></i>
+            <br>前の情報</a>
     </footer>
 </body>
 
