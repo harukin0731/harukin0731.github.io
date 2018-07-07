@@ -131,11 +131,11 @@ main div {
 div.mod{
     max-height: 250px;
     /*最大高さ*/
-    overflow: hidden;
+    /*overflow: hidden;
     /*はみだした範囲を隠す*/
     /*text-overflow: ellipsis;
     /*隠した範囲に...で追加する*/
-    white-space: nowrap;
+    /*white-space: nowrap;
 }
 div.block,p a {
     margin: auto;
