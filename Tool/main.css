@@ -144,8 +144,6 @@ div.block {
     /左端に設置、残った奴は押し出されて右へ*/
     width: 90%;
     /*横幅50%から20pxを引いた値*/
-    min-width: 300px;
-    /*最低サイズ*/
 }
 
 @media screen and (min-width: 768px) {
