@@ -133,18 +133,17 @@ div.mod{
     /*最大高さ*/
     overflow: hidden;
     /*はみだした範囲を隠す*/
-    text-overflow: ellipsis;
+    /*text-overflow: ellipsis;
     /*隠した範囲に...で追加する*/
+    white-space: nowrap;
 }
 div.block {
     margin: auto;
     /*中央表示*/
     margin-top: 20px;
-    /*左端に設置、残った奴は押し出されて右へ*/
+    /左端に設置、残った奴は押し出されて右へ*/
     width: 90%;
     /*横幅50%から20pxを引いた値*/
-    min-width: 300px;
-    /*最低サイズ*/
 }
 
 @media screen and (min-width: 768px) {
