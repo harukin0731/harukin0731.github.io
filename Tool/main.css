@@ -135,6 +135,7 @@ div.mod{
     /*はみだした範囲を隠す*/
     /*text-overflow: ellipsis;
     /*隠した範囲に...で追加する*/
+    white-space: nowrap;
 }
 div.block {
     margin: auto;
@@ -150,15 +151,6 @@ div.block {
 @media screen and (min-width: 768px) {
     /* ここにタブレット・PCの記述 */
     div.block {
-        margin: 15px;
-        /*ボックス同士の隙間*/
-        float: left;
-        /*左端に設置、残った奴は押し出されて右へ*/
-        width: calc(50% - 30px);
-        /*横幅50%から20pxを引いた値*/
-        min-width: 300px;
-    }
-    div.mod {
         margin: 15px;
         /*ボックス同士の隙間*/
         float: left;
