@@ -140,7 +140,7 @@ div.block {
     margin: auto;
     /*中央表示*/
     margin-top: 20px;
-    /*左端に設置、残った奴は押し出されて右へ*/
+    /左端に設置、残った奴は押し出されて右へ*/
     width: 90%;
     /*横幅50%から20pxを引いた値*/
     min-width: 300px;
@@ -150,6 +150,15 @@ div.block {
 @media screen and (min-width: 768px) {
     /* ここにタブレット・PCの記述 */
     div.block {
+        margin: 15px;
+        /*ボックス同士の隙間*/
+        float: left;
+        /*左端に設置、残った奴は押し出されて右へ*/
+        width: calc(50% - 30px);
+        /*横幅50%から20pxを引いた値*/
+        min-width: 300px;
+    }
+    div.mod {
         margin: 15px;
         /*ボックス同士の隙間*/
         float: left;
