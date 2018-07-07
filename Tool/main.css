@@ -137,7 +137,7 @@ div.mod{
     /*隠した範囲に...で追加する*/
     white-space: nowrap;
 }
-div.block {
+div.block,p a {
     margin: auto;
     /*中央表示*/
     margin-top: 20px;
