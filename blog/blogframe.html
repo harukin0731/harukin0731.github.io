@@ -38,6 +38,15 @@
                 location.href = fowardurl + ".html";
             }
         }
+        (function () {
+            var cx = '003897913745301430598:r3pobermvvm';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
     </script>
 </head>
 
@@ -56,6 +65,10 @@
             <i class="fas fa-angle-right fa-2x"></i>
             <br>前の情報</a>
     </footer>
+    <li>
+        <gcse:search></gcse:search>
+    </li>
+
 </body>
 
 </html>
