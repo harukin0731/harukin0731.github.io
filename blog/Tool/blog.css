@@ -17,19 +17,17 @@ html {
 body,main {
     margin: 0%;
 }
-footer{
-    position: fixed;width: 100%;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.561);
-    box-shadow: #2e2e2e;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.836));
-}
-footer li {
+footer {
     margin: 0;
     display: table;
+    background-color: rgba(255, 255, 255, 0.561);
+    box-shadow: #2e2e2e;
+    position: fixed;
     width: 100%;
     bottom: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.836));
 }
+
 @media screen and (min-width: 400px) {
     footer {
         font-size: medium;
