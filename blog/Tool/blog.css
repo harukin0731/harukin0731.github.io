@@ -1,3 +1,8 @@
+html {
+    margin: 0%;
+    background: url("../../img/background.jpg")center center / cover no-repeat fixed;
+    height: 100vh;
+}
 header {
     width: 100%;
     height: 100px;
@@ -7,13 +12,6 @@ header {
     text-align: center;
     color: rgb(255, 255, 255);
 }
-
-html {
-    margin: 0%;
-    background: url("../../img/background.jpg")center center / cover no-repeat fixed;
-    height: 100vh;
-}
-
 body,main {
     margin: 0%;
 }
@@ -95,6 +93,7 @@ main div.block1 {
     text-decoration: none;
     /*リンク下線の消去*/
     border: double 2px #ffffff;
+    background: #ffffffad;
     margin: auto;
     /*中央表示*/
     margin-top: 20px;
